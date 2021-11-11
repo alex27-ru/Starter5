@@ -1,7 +1,7 @@
 // // Import vendor jQuery plugin example
 // import '~/app/libs/mmenu/dist/mmenu.js'
 import '~/app/libs/magnific-popup/dist/jquery.magnific-popup.min.js'
-//import '~/app/libs/page-scroll-to-id/jquery.malihu.PageScroll2id.js'
+import '~/app/libs/page-scroll-to-id/jquery.malihu.PageScroll2id.js'
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -21,7 +21,7 @@ $('#warranty1-click').magnificPopup({
       type: 'inline'
 		},
 		removalDelay: 300,
-		mainClass: 'mfp-fade'
+		mainClass: 'mfp-fade',
 	});
 	$('#warranty3-click').magnificPopup({
 		items: {
@@ -54,7 +54,7 @@ $('#warranty1-click').magnificPopup({
 		$('.questions__item').addClass('questions--visible');
 	});
 
-
+$("a.allback-button").mPageScroll2id();
 
 
 
