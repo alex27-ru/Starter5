@@ -100,6 +100,9 @@ section
 	.title
 		color: #fff
 
+input
+	border-radius: 0
+
 .header,
 .footer
 	&__time
@@ -802,6 +805,18 @@ section
 		margin-bottom: 0
 	.vendor-code__form-description
 		margin-top: 0
+
+@media ( max-width: 500px )
+	.questions__item,
+	.questions--visible.questions__item
+		display: flex
+		align-items: start
+		&:before
+			margin-right: 10px
+	.questions__item-btn
+		line-height: 1.3
+	.questions__answer-box
+		left: 30px
 
 @media ( max-width: 420px )
 	.header__phone
