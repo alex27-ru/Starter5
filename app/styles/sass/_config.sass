@@ -1,10 +1,10 @@
 // USER VARIABLES SECTION
 
-$accent: orange // Accent Color
-$fontsize: 16px // Body Font Size
-$textcolor: #333 // Text Color
+$accent: #f7b516 // Accent Color
+$fontsize: 18px // Body Font Size
+$textcolor: #000 // Text Color
 $lineheight: 1.65 // Document Line Height
-$userfont: roboto-oh5, sans-serif // User Font Family
+$userfont: proxima-nova, sans-serif // User Font Family
 $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
 
 // Bootstrap compatible gutter variable => $gutter
@@ -17,6 +17,7 @@ $gutter: $grid-gutter-width
 @import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
 // @import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
 // @import 'node_modules/bootstrap/scss/_utilities.scss' // Optional Bootstrap Utilites
+@import '../libs/magnific-popup/dist/magnific-popup.css' // popup
 
 // FONTS LOAD SECTION
 
@@ -31,6 +32,11 @@ $gutter: $grid-gutter-width
 @include font('roboto-oh5', italic, 400, '../fonts/roboto-italic-webfont.woff2')
 @include font('roboto-oh5', normal, 700, '../fonts/roboto-bold-webfont.woff2')
 @include font('roboto-oh5', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2')
+
+@include font('proxima-nova', normal, 400, '../fonts/proximanova-regular.woff2')
+@include font('proxima-nova', normal, 700, '../fonts/proximanova-bold.woff2')
+@include font('proxima-nova', normal, 800, '../fonts/proximanova-extrabld.woff2')
+@include font('proxima-nova', normal, 900, '../fonts/proximanova-black.woff2')
 
 // GENERAL CSS SETTINGS
 
