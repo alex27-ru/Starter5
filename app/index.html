@@ -153,15 +153,15 @@
 	<div class="wrapper">
 		<h2 class="feedback__title">Отзывы</h2>
 		<div class="feedback__button-inner">
-			<button class="feedback__btn" data-filter=".category-a">Здравоохранение</button>
-			<button class="feedback__btn" data-filter=".category-b">Бизнес</button>
-			<button class="feedback__btn" data-filter=".category-c">Семья</button>
-			<button class="feedback__btn" data-filter=".category-d">ЖКХ</button>
-			<button class="feedback__btn" data-filter=".category-e">Недвижимость</button>
-			<button class="feedback__btn" data-filter="all">Все</button>
+			<button class="feedback__btn filter" data-filter=".category-a">Здравоохранение</button>
+			<button class="feedback__btn filter" data-filter=".category-b">Бизнес</button>
+			<button class="feedback__btn filter" data-filter=".category-c">Семья</button>
+			<button class="feedback__btn filter" data-filter=".category-d">ЖКХ</button>
+			<button class="feedback__btn filter" data-filter=".category-e">Недвижимость</button>
+			<button class="feedback__btn filter" data-filter="all">Все</button>
 		</div>
 
-		<div class="feedback__slider">
+		<div class="feedback__slider" id="feedback__slider">
 			<div class="feedback__slider-item mix category-a">
 				<a href="#" class="feedback__slider-link">
 					<img
@@ -218,7 +218,7 @@
 					<p class="feedback__slider-description">Название видеоролика</p>
 				</a>
 			</div>
-			<div class="feedback__slider-item mix category-d">
+			<div class="feedback__slider-item mix category-b">
 				<a href="#" class="feedback__slider-link">
 					<img
 						src="images/dist/img3.jpg"

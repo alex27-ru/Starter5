@@ -1,15 +1,18 @@
 {
   "name": "mixitup",
-  "homepage": "https://github.com/barrel/mixitup",
-  "version": "3.3.1",
-  "_release": "3.3.1",
+  "version": "2.0.4",
+  "dependencies": {
+    "jquery": ">=1.7"
+  },
+  "homepage": "https://github.com/empiri-software/mixitup",
+  "_release": "2.0.4",
   "_resolution": {
     "type": "version",
-    "tag": "v3.3.1",
-    "commit": "61dac0554ab2b69fca3c927a173b0a000e4f6896"
+    "tag": "v2.0.4",
+    "commit": "0ab143422c004ce751e60445d0b2859be2a5fa8f"
   },
-  "_source": "https://github.com/barrel/mixitup.git",
-  "_target": "^3.3.1",
-  "_originalSource": "mixitup",
+  "_source": "https://github.com/empiri-software/mixitup.git",
+  "_target": "^2.0.4",
+  "_originalSource": "bower-mixitup",
   "_direct": true
 }

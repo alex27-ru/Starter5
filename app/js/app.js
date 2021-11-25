@@ -1,7 +1,7 @@
 // // Import vendor jQuery plugin example
 // import '~/app/libs/mmenu/dist/mmenu.js'
 import '~/app/libs/slick-carousel/slick/slick.min.js'
-import '~/app/libs/mixitup/dist/mixitup.min.js'
+import '~/app/libs/mixitup/build/jquery.mixitup.min.js'
 
 /* устанавливать jQuery (с записью в package.json) если не сработало подключение библиотеки - npm install jquery --save */
 document.addEventListener('DOMContentLoaded', () => {
@@ -19,15 +19,10 @@ $('.feedback__slider').slick({
 
 
 
+/* подключение фильтра mixItUp в сладере */
+$('#feedback__slider').mixItUp();
 
-var mixer = mixitup(containerEl, {
-    selectors: {
-        target: '.feedback__slider'
-    },
-    animation: {
-        duration: 300
-    }
-});
+//$('.filter').attr("display","block");
 
 
 })
