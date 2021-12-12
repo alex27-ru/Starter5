@@ -111,25 +111,30 @@
 	top:  43%
 	width: 20px
 	height: 14px
+	
 
+.slick-prev,
+.slick-next
 	&:before
 		content: ''
 		position: absolute
 		width: 20px
 		height: 2px
-		background-color: $accent
+		background-color: #ccc
 		left: 0
 		top: 6px
+		transition: all .2s ease
 	&:after
 		content: ''
 		position: absolute
 		width: 10px
 		height: 10px
-		border-right: 2px solid $accent
-		border-top: 2px solid $accent
+		border-right: 2px solid #ccc
+		border-top: 2px solid #ccc
 		transform: rotate(45deg)
 		top: 1px
 		right: 0
+		transition: all .2s ease
 
 .slick-prev
 	left: 0
@@ -139,14 +144,25 @@
 		position: absolute
 		width: 10px
 		height: 10px
-		border-right: 2px solid $accent
-		border-top: 2px solid $accent
+		border-right: 2px solid #ccc
+		border-top: 2px solid #ccc
 		transform: rotate(-135deg)
 		top: 1px
 		left: 0
+	&:hover
+		&::before
+			background-color: $accent
+		&::after
+			border-color: $accent
 .slick-next
 	right: 0
 	margin-right: -100px
+	&:hover
+		&::before
+			background-color: $accent
+		&::after
+			border-color: $accent
+			
 
 
 
