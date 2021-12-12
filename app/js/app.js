@@ -1,7 +1,7 @@
 // // Import vendor jQuery plugin example
 // import '~/app/libs/mmenu/dist/mmenu.js'
 import '~/app/libs/slick-carousel/slick/slick.min.js'
-//import '~/app/libs/mixitup/build/jquery.mixitup.min.js'
+import '~/app/libs/magnific-popup/dist/jquery.magnific-popup.min.js'
 
 /* устанавливать jQuery (с записью в package.json) если не сработало подключение библиотеки - npm install jquery --save */
 document.addEventListener('DOMContentLoaded', () => {
