@@ -31,7 +31,27 @@ $('.feedback__slider').slick({
  
   });
 
+$('.feedback__slider').magnificPopup({
+	delegate: '.feedback__slider-link',
+	type: 'iframe',
+	iframe: {
+  markup: '<div class="mfp-iframe-scaler">'+
+            '<div class="mfp-close"></div>'+
+            '<iframe class="mfp-iframe" src="//about:blank" frameborder="0" allow="autoplay" allowfullscreen></iframe>'+
+          '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
 
+  patterns: {
+    youtube: {
+      index: 'youtube.com/',
+      id: 'v=',
+      src: 'https://www.youtube.com/embed/%id%?autoplay=1'
+    }
+
+  },
+
+  srcAction: 'iframe_src', // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".
+}
+});
 
 
 
