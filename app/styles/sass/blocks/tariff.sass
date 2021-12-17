@@ -1,0 +1,97 @@
+.tariff
+	background-color: #f5f5f5
+	padding: 100px 0 195px
+	&__title
+		margin: 0
+		font-family: Muller
+		font-size: 30px
+		font-weight: bold
+		letter-spacing: 1.5px
+		color: #313131
+		margin-bottom: 39px
+	&__title-description
+		font-family: Muller
+		font-size: 18px
+		font-weight: bold
+		line-height: 1.39
+		color: #313131
+		max-width: 655px
+		margin-bottom: 50px
+	&__tabs
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: center
+		input[type="radio"]
+			display: none
+	&__tab-content
+		display: none
+		margin-top: 30px
+
+	label
+		cursor: pointer
+		user-select: none
+		font-family: Muller
+		font-size: 14px
+		font-weight: 500
+		letter-spacing: 0.7px
+		text-align: center
+		color: $textcolor
+		text-transform: uppercase
+		padding: 12px 13px 8px
+		line-height: normal
+		border: solid 2px transparent
+		border-radius: 5px
+		transition: all .2s ease
+		margin: 0 1px
+		&:hover
+			color: $accent
+	&__tabs-text
+		margin-right: auto
+		font-family: Muller
+		font-size: 16px
+		font-weight: 300
+		color: #313131
+
+	&__tab-inner
+		display: flex
+
+#tab-btn1:checked~#content-1,
+#tab-btn2:checked~#content-2
+	display: block
+
+#tab-btn2:checked+label,
+#tab-btn1:checked+label
+	border-color: #e50000
+	color: $accent
+
+.tab-card
+	border: solid 1px #e8e8e8
+	padding: 50px 20px 50px
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	&:nth-child(odd)
+		max-width: 310px
+	&:first-child
+		padding-left: 10px
+	&:last-child
+		padding-right: 10px
+		
+	&__inner
+		display: flex
+		flex-direction: column
+
+	&__title
+		text-align: center
+		margin: 0
+		margin-bottom: 29px
+		font-family: Muller
+		font-size: 20px
+		font-weight: 300
+		span
+			font-weight: bold
+	&__img
+		max-width: 200px
+		margin: auto
+		margin-bottom: 30px
