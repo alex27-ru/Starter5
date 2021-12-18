@@ -27,6 +27,7 @@
 	&__tab-content
 		display: none
 		margin-top: 30px
+		width: 100%
 
 	label
 		cursor: pointer
@@ -55,6 +56,7 @@
 
 	&__tab-inner
 		display: flex
+		width: 100%
 
 #tab-btn1:checked~#content-1,
 #tab-btn2:checked~#content-2
@@ -71,6 +73,8 @@
 	display: flex
 	flex-direction: column
 	justify-content: space-between
+	background-color: #fff
+	width: 100%
 	&:nth-child(odd)
 		max-width: 310px
 	&:first-child
@@ -95,3 +99,59 @@
 		max-width: 200px
 		margin: auto
 		margin-bottom: 30px
+	&__item
+		display: flex
+		justify-content: space-between
+		font-family: Muller
+		font-size: 11px
+		font-weight: 300
+		color: #000
+		border-top: 1px solid #f5f5f5
+		padding: 12px
+		&:last-child
+			border-bottom: 1px solid #f5f5f5
+			margin-bottom: 34px
+
+	&__price
+		font-family: Muller
+		font-size: 13px
+		font-weight: 300
+		text-align: center
+		color: #000
+		margin-bottom: 33px
+		line-height: 3.08
+		span
+			font-size: 24px
+			font-weight: bold
+			line-height: 1.67
+	&__consultation-btn,
+	&__buy-btn
+		width: 200px
+		height: 55px
+		border-radius: 5px
+		background-image: linear-gradient(to top, #ff2e00, #ff4c25)
+		font-family: Muller
+		font-size: 18px
+		font-weight: bold
+		color: #fff
+		
+	&__buy-btn
+		background-color: #9a9a9a
+		background-image: none
+		margin-top: 15px
+	&__sale
+		display: flex
+		flex-direction: column
+		align-items: center
+
+	&:nth-child(2)
+		.tab-card__consultation-btn
+			background-image: linear-gradient(to top, #008e00, #00a300)
+	&:nth-child(3)
+		.tab-card__consultation-btn
+			background-image: linear-gradient(to top, #001c67, #02388f)
+
+	&__benefit_plus
+		font-size: 13px
+	&__date
+		font-weight: 500
