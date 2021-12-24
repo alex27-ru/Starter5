@@ -70,10 +70,18 @@
 
 <section class="first-screen">
 	<div class="wrapper">
-		<h1 class="first-screen__title">Годовой абонемент на услуги <br><span>«личного юриста»</span> 
-</h1>
-		<p class="first-screen__title-description">24 часа в сутки Ваш личный юрист – <span class="first-screen__title-description_bold">Advogrand</span>  на связи <br>
-всего <span class="first-screen__title-description_bold">за 12 рублей в день</span> </p>
+		<h1 class="first-screen__title">
+			Годовой абонемент на услуги <br /><span>«личного юриста»</span>
+		</h1>
+		<p class="first-screen__title-description">
+			24 часа в сутки Ваш личный юрист –
+			<span class="first-screen__title-description_bold">Advogrand</span> на
+			связи <br />
+			всего
+			<span class="first-screen__title-description_bold"
+				>за 12 рублей в день</span
+			>
+		</p>
 		<button class="first-screen__btn">Хочу «личного юриста»!</button>
 	</div>
 </section>
@@ -390,184 +398,236 @@
 			Оформление займёт всего 10 минут
 		</p>
 		<div class="tariff__tabs">
+			<p class="tariff__tabs-text">
+				Выберите годовую карту, которая Вам подходит:
+			</p>
 
-				<p class="tariff__tabs-text">
-					Выберите годовую карту, которая Вам подходит:
-				</p>
+			<input
+				type="radio"
+				name="tab-btn"
+				id="tab-btn1"
+				value=""
+				class="tariff__tabs-btn"
+			/>
+			<label for="tab-btn1">Сравнить тарифы</label>
+			<input
+				type="radio"
+				name="tab-btn"
+				id="tab-btn2"
+				value=""
+				class="tariff__tabs-btn"
+				checked
+			/>
+			<label for="tab-btn2">тарифы</label>
 
-					<input type="radio" name="tab-btn" id="tab-btn1" value="" class="tariff__tabs-btn" />
-					<label for="tab-btn1">Сравнить тарифы</label>
-					<input type="radio" name="tab-btn" id="tab-btn2" value="" class="tariff__tabs-btn" checked />
-					<label for="tab-btn2">тарифы</label>
-
-
-
-				<div id="content-2" class="tariff__tab-content">
-					<div class="tariff__tab-inner">
-						<div class="tab-card">
-							<div class="tab-card__inner">
-								<h3 class="tab-card__title">
-									Персональная карта <br />
-									<span>для Вас</span>
-								</h3>
-								<img
-									src="images/dist/personal-standard-1@2x.png"
-									alt="Персональная карта"
-									class="tab-card__img img-responsive"
-								/>
-								<ul class="tab-card__list">
-									<li class="tab-card__item">
-										<span class="tab-card__benefit">Устные консультации</span>
-										<span class="tab-card__date">2 в месяц</span>
-									</li>
-									<li class="tab-card__item">
-										<span class="tab-card__benefit"
-											>Консультации в отношении 3-х лиц</span
-										>
-										<span class="tab-card__date">2 в год</span>
-									</li>
-									<li class="tab-card__item">
-										<span class="tab-card__benefit"
-											>Письменные консультации</span
-										>
-										<span class="tab-card__date">2 в квартал</span>
-									</li>
-									<li class="tab-card__item">
-										<span class="tab-card__benefit">Звонок юриста</span>
-										<span class="tab-card__date">1 в год</span>
-									</li>
-									<li class="tab-card__item">
-										<span class="tab-card__benefit"
-											>Содействие в переговорах</span
-										>
-										<span class="tab-card__date">1 в месяц</span>
-									</li>
-								</ul>
-							</div>
-							<div class="tab-card__sale">
-								<p class="tab-card__price">Цена: <br><span>65 $ за год</span> </p>
-								<button class="tab-card__consultation-btn">Консультация</button>
-								<button class="tab-card__buy-btn">Купить</button>
-							</div>
+			<div id="content-2" class="tariff__tab-content">
+				<div class="tariff__tab-inner">
+					<div class="tab-card">
+						<div class="tab-card__inner">
+							<h3 class="tab-card__title">
+								Персональная карта <br />
+								<span>для Вас</span>
+							</h3>
+							<img
+								src="images/dist/personal-standard-1@2x.png"
+								alt="Персональная карта"
+								class="tab-card__img img-responsive"
+							/>
+							<ul class="tab-card__list">
+								<li class="tab-card__item">
+									<span class="tab-card__benefit">Устные консультации</span>
+									<span class="tab-card__date">2 в месяц</span>
+								</li>
+								<li class="tab-card__item">
+									<span class="tab-card__benefit"
+										>Консультации в отношении 3-х лиц</span
+									>
+									<span class="tab-card__date">2 в год</span>
+								</li>
+								<li class="tab-card__item">
+									<span class="tab-card__benefit">Письменные консультации</span>
+									<span class="tab-card__date">2 в квартал</span>
+								</li>
+								<li class="tab-card__item">
+									<span class="tab-card__benefit">Звонок юриста</span>
+									<span class="tab-card__date">1 в год</span>
+								</li>
+								<li class="tab-card__item">
+									<span class="tab-card__benefit"
+										>Содействие в переговорах</span
+									>
+									<span class="tab-card__date">1 в месяц</span>
+								</li>
+							</ul>
 						</div>
-						<div class="tab-card">
-							<div class="tab-card__inner">
-								<h3 class="tab-card__title">
-									Карта <br />
-									<span>для всей семьи</span>
-								</h3>
-								<img
-									src="images/dist/family-standard-1@2x.jpg"
-									alt="Персональная карта"
-									class="tab-card__img img-responsive"
-								/>
-								<ul class="tab-card__list">
-									<li class="tab-card__item">
-										<span class="tab-card__benefit">Устные консультации</span>
-										<span class="tab-card__date">2 в месяц</span>
-									</li>
-									<li class="tab-card__item">
-										<span class="tab-card__benefit"
-											>Консультации в отношении 3-х лиц</span
-										>
-										<span class="tab-card__date">2 в год</span>
-									</li>
-									<li class="tab-card__item">
-										<span class="tab-card__benefit"
-											>Письменные консультации</span
-										>
-										<span class="tab-card__date">2 в квартал</span>
-									</li>
-									<li class="tab-card__item">
-										<span class="tab-card__benefit">Звонок юриста</span>
-										<span class="tab-card__date">1 в год</span>
-									</li>
-									<li class="tab-card__item">
-										<span class="tab-card__benefit"
-											>Содействие в переговорах</span
-										>
-										<span class="tab-card__date">1 в месяц</span>
-									</li>
-									<li class="tab-card__item">
-										<span class="tab-card__benefit tab-card__benefit_plus"
-											>Сервис для всей семьи</span
-										>
-									</li>
-								</ul>
-							</div>
-							<div class="tab-card__sale">
-								<p class="tab-card__price">Цена: <br><span>65 $ за год</span> </p>
-								<button class="tab-card__consultation-btn">Консультация</button>
-								<button class="tab-card__buy-btn">Купить</button>
-							</div>
+						<div class="tab-card__sale">
+							<p class="tab-card__price">
+								Цена: <br /><span>65 $ за год</span>
+							</p>
+							<button class="tab-card__consultation-btn">Консультация</button>
+							<button class="tab-card__buy-btn">Купить</button>
 						</div>
-						<div class="tab-card">
-							<div class="tab-card__inner">
-								<h3 class="tab-card__title">
-									Карта <br />
-									<span>для бизнеса</span>
-								</h3>
-								<img
-									src="images/dist/business-standard-1@2x.jpg"
-									alt="Персональная карта"
-									class="tab-card__img img-responsive"
-								/>
-								<ul class="tab-card__list">
-									<li class="tab-card__item">
-										<span class="tab-card__benefit">Устные консультации</span>
-										<span class="tab-card__date">2 в месяц</span>
-									</li>
-									<li class="tab-card__item">
-										<span class="tab-card__benefit"
-											>Консультации в отношении 3-х лиц</span
-										>
-										<span class="tab-card__date">2 в год</span>
-									</li>
-									<li class="tab-card__item">
-										<span class="tab-card__benefit"
-											>Письменные консультации</span
-										>
-										<span class="tab-card__date">2 в квартал</span>
-									</li>
-									<li class="tab-card__item">
-										<span class="tab-card__benefit">Звонок юриста</span>
-										<span class="tab-card__date">1 в год</span>
-									</li>
-									<li class="tab-card__item">
-										<span class="tab-card__benefit"
-											>Содействие в переговорах</span
-										>
-										<span class="tab-card__date">1 в месяц</span>
-									</li>
-									<li class="tab-card__item">
-										<span class="tab-card__benefit tab-card__benefit_plus"
-											>Бизнес-консультация</span
-										>
-									</li>
-									<li class="tab-card__item">
-										<span class="tab-card__benefit tab-card__benefit_plus"
-											>Рекомендуемая модель договора</span
-										>
-									</li>
-									<li class="tab-card__item">
-										<span class="tab-card__benefit tab-card__benefit_plus"
-											>Обзор изменения в законодательстве</span
-										>
-									</li>
-								</ul>
-							</div>
-							<div class="tab-card__sale">
-								<p class="tab-card__price">Цена: <br><span>65 $ за год</span> </p>
-								<button class="tab-card__consultation-btn">Консультация</button>
-								<button class="tab-card__buy-btn">Купить</button>
-							</div>
+					</div>
+					<div class="tab-card">
+						<div class="tab-card__inner">
+							<h3 class="tab-card__title">
+								Карта <br />
+								<span>для всей семьи</span>
+							</h3>
+							<img
+								src="images/dist/family-standard-1@2x.jpg"
+								alt="Персональная карта"
+								class="tab-card__img img-responsive"
+							/>
+							<ul class="tab-card__list">
+								<li class="tab-card__item">
+									<span class="tab-card__benefit">Устные консультации</span>
+									<span class="tab-card__date">2 в месяц</span>
+								</li>
+								<li class="tab-card__item">
+									<span class="tab-card__benefit"
+										>Консультации в отношении 3-х лиц</span
+									>
+									<span class="tab-card__date">2 в год</span>
+								</li>
+								<li class="tab-card__item">
+									<span class="tab-card__benefit">Письменные консультации</span>
+									<span class="tab-card__date">2 в квартал</span>
+								</li>
+								<li class="tab-card__item">
+									<span class="tab-card__benefit">Звонок юриста</span>
+									<span class="tab-card__date">1 в год</span>
+								</li>
+								<li class="tab-card__item">
+									<span class="tab-card__benefit"
+										>Содействие в переговорах</span
+									>
+									<span class="tab-card__date">1 в месяц</span>
+								</li>
+								<li class="tab-card__item">
+									<span class="tab-card__benefit tab-card__benefit_plus"
+										>Сервис для всей семьи</span
+									>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-card__sale">
+							<p class="tab-card__price">
+								Цена: <br /><span>65 $ за год</span>
+							</p>
+							<button class="tab-card__consultation-btn">Консультация</button>
+							<button class="tab-card__buy-btn">Купить</button>
+						</div>
+					</div>
+					<div class="tab-card">
+						<div class="tab-card__inner">
+							<h3 class="tab-card__title">
+								Карта <br />
+								<span>для бизнеса</span>
+							</h3>
+							<img
+								src="images/dist/business-standard-1@2x.jpg"
+								alt="Персональная карта"
+								class="tab-card__img img-responsive"
+							/>
+							<ul class="tab-card__list">
+								<li class="tab-card__item">
+									<span class="tab-card__benefit">Устные консультации</span>
+									<span class="tab-card__date">2 в месяц</span>
+								</li>
+								<li class="tab-card__item">
+									<span class="tab-card__benefit"
+										>Консультации в отношении 3-х лиц</span
+									>
+									<span class="tab-card__date">2 в год</span>
+								</li>
+								<li class="tab-card__item">
+									<span class="tab-card__benefit">Письменные консультации</span>
+									<span class="tab-card__date">2 в квартал</span>
+								</li>
+								<li class="tab-card__item">
+									<span class="tab-card__benefit">Звонок юриста</span>
+									<span class="tab-card__date">1 в год</span>
+								</li>
+								<li class="tab-card__item">
+									<span class="tab-card__benefit"
+										>Содействие в переговорах</span
+									>
+									<span class="tab-card__date">1 в месяц</span>
+								</li>
+								<li class="tab-card__item">
+									<span class="tab-card__benefit tab-card__benefit_plus"
+										>Бизнес-консультация</span
+									>
+								</li>
+								<li class="tab-card__item">
+									<span class="tab-card__benefit tab-card__benefit_plus"
+										>Рекомендуемая модель договора</span
+									>
+								</li>
+								<li class="tab-card__item">
+									<span class="tab-card__benefit tab-card__benefit_plus"
+										>Обзор изменения в законодательстве</span
+									>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-card__sale">
+							<p class="tab-card__price">
+								Цена: <br /><span>65 $ за год</span>
+							</p>
+							<button class="tab-card__consultation-btn">Консультация</button>
+							<button class="tab-card__buy-btn">Купить</button>
 						</div>
 					</div>
 				</div>
-				<div id="content-1" class="tariff__tab-content">
-2
-				</div>
+			</div>
+			<div id="content-1" class="tariff__tab-content">2</div>
+		</div>
+	</div>
+</section>
 
+<section class="contacts">
+	<div class="wrapper">
+		<div class="contacts__inner">
+			<form class="form">
+				<h3 class="form__title">Напишите нам письмо или задайте свой вопрос</h3>
+				<legend class="form__input-description">Введите своё имя</legend>
+				<input type="text" class="form__input-name" />
+				<legend class="form__input-description">Ваш номер телефона</legend>
+				<input type="tel" class="form__input-phone" />
+				<legend class="form__input-description">Сообщение или вопрос</legend>
+				<textarea
+					name=""
+					id=""
+					cols="30"
+					rows="10"
+					class="form__input-text"
+				></textarea>
+				<button class="form__btn">Заказать звонок консультанта</button>
+				<legend class="form__description">
+					Перезвоним вам в течении 5 минут
+				</legend>
+			</form>
+			<div class="contacts-box">
+				<h2 class="contacts__title">Контакты</h2>
+				<p class="contacts__phone-text">Телефон для покупки карт:</p>
+				<a href="tel:+7 499 322-85-80" class="contacts__phone-link"
+					>+7 499 322-85-80</a
+				>
+				<p class="contacts__mail-text">Email:</p>
+				<a href="mailto:info@advogrand.net" class="contacts__mail-link"
+					>info@advogrand.net</a
+				>
+				<p class="contacts__work-date">Время работы:</p>
+				<p class="contacts__weekdays">
+					С понедельника по пятницу: 9:00 — 22:00
+				</p>
+				<p class="contacts__holidays">
+					В праздничные и выходные дни: только телефонные консультации 10:00 —
+					20:00
+				</p>
+			</div>
 		</div>
 	</div>
 </section>
