@@ -53,6 +53,11 @@ $('.feedback__slider').magnificPopup({
 }
 });
 
+$('.services__item-link').magnificPopup({
+  type:'inline',
+  midClick: true
+});
+
 $('.partners__slider').slick({
 	infinite: true,
   slidesToShow: 4,
