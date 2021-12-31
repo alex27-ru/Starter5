@@ -61,7 +61,7 @@ $('.services__item-link').magnificPopup({
   midClick: true
 });
 
-$('.call-back').magnificPopup({
+$('.call-back, .first-screen__btn').magnificPopup({
   items: {
       src: '#call-back-popup',
       type: 'inline'
