@@ -34,10 +34,13 @@ $('.feedback__slider').slick({
 $('.feedback__slider').magnificPopup({
 	delegate: '.feedback__slider-link',
 	type: 'iframe',
+	mainClass: 'Class-video',
 	iframe: {
   markup: '<div class="mfp-iframe-scaler">'+
+            '<h2 class="video__title">Козни недобросоветсного риелтора</h2>'+
             '<div class="mfp-close"></div>'+
             '<iframe class="mfp-iframe" src="//about:blank" frameborder="0" allow="autoplay" allowfullscreen></iframe>'+
+						'<div class="video__bottom-inner"><img class="feedback__img-bottom" src="images/dist/family-standard-1.jpg" alt=""> <span class="feedback__text-bottom">Карта клиента - Family</span></div>' +
           '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
 
   patterns: {
@@ -56,6 +59,20 @@ $('.feedback__slider').magnificPopup({
 $('.services__item-link').magnificPopup({
   type:'inline',
   midClick: true
+});
+
+$('.call-back').magnificPopup({
+  items: {
+      src: '#call-back-popup',
+      type: 'inline'
+  }
+});
+
+$('.tab-card__consultation-btn, .benefits__numbers-btn').magnificPopup({
+  items: {
+      src: '#call-back-popup2',
+      type: 'inline'
+  }
 });
 
 $('.partners__slider').slick({
