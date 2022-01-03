@@ -70,6 +70,7 @@ body
 	&__right 
 		display: flex
 		align-items: center
+		order: 2
 
 	&__description
 		font-size: 14px
@@ -121,6 +122,9 @@ body
 	.header-bottom__phone-link
 		margin-left: 10px
 
+.slicknav_menu
+	display: none
+
 @media ( max-width: 750px )
 	.header-bottom__right
 		width: 100%
@@ -128,3 +132,18 @@ body
 		margin-left: auto
 
 @media ( max-width: 570px )
+	.nav
+		display: none
+	.slicknav_menu
+		display: block
+		order: 1
+		background-color: transparent
+		padding: 0
+	.slicknav_nav
+		color: #000
+		border-left: 1px solid #1c1c1c4f
+		a
+			color: $textcolor
+	.header-bottom
+		margin-top: 31px
+	

@@ -2,6 +2,7 @@
 // import '~/app/libs/mmenu/dist/mmenu.js'
 import '~/app/libs/slick-carousel/slick/slick.min.js'
 import '~/app/libs/magnific-popup/dist/jquery.magnific-popup.min.js'
+import '~/app/libs/slicknav/dist/jquery.slicknav.min.js'
 
 /* устанавливать jQuery (с записью в package.json) если не сработало подключение библиотеки - npm install jquery --save */
 document.addEventListener('DOMContentLoaded', () => {
@@ -83,6 +84,15 @@ $('.partners__slider').slick({
 	prevArrow: '<button type="button" class="slick-prev"></button>'
 
   });
+
+	$(function(){
+        $('.nav').slicknav({
+					label: '',
+					closeOnClick: true,
+					prependTo: '.header-bottom__inner'
+				});
+				
+    });
 
 
 })
