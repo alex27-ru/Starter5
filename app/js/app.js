@@ -89,7 +89,7 @@ $('.partners__slider').slick({
         $('.nav').slicknav({
 					label: '',
 					closeOnClick: true,
-					prependTo: '.header-bottom__inner'
+					prependTo: '.header-top__inner'
 				});
 				
     });
