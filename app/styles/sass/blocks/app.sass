@@ -3,8 +3,10 @@
 	color: #fff
 	&__inner
 		display: flex
+		flex-wrap: wrap
 	&__text
 		min-width: 530px
+		max-width: 652px
 	&__list
 		counter-reset: myCounter
 	&__item
@@ -55,6 +57,9 @@
 	&__links
 		text-align: center
 		padding-top: 33px
+		display: flex
+		flex-direction: column
+		margin: 0 auto
 		a
 			display: inline-block
 			margin-bottom: 30px
@@ -62,3 +67,21 @@
 				margin-bottom: 0
 	&__link-img
 		max-width: 206px
+
+@media ( max-width: 880px )
+	.app__links
+		width: 100%
+		flex-direction: row
+		justify-content: space-around
+	.app__text
+		max-width: 100%
+		min-width: 100%
+	.app__title
+		margin-bottom: 50px
+	.app 
+		padding-bottom: 30px
+
+@media ( max-width: 475px )
+	.app__links
+		flex-direction: column
+	
