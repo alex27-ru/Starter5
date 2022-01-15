@@ -14,7 +14,30 @@ $('.feedback__slider').slick({
   slidesToShow: 3,
   slidesToScroll: 3,
 	nextArrow: '<button type="button" class="slick-next"></button>',
-	prevArrow: '<button type="button" class="slick-prev"></button>'
+	prevArrow: '<button type="button" class="slick-prev"></button>',
+	responsive: [
+    {
+      breakpoint: 1050,
+      settings: {
+        arrows: false
+      }
+    },
+		{
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 2,
+				slidesToScroll: 2
+      }
+    },
+		{
+      breakpoint: 415,
+      settings: {
+        slidesToShow: 1,
+				slidesToScroll: 1
+      }
+    }
+
+  ]
 
   });
 
