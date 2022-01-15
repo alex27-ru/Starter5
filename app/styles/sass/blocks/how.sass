@@ -10,8 +10,10 @@
 	&__inner 
 		display: flex
 		flex-wrap: wrap
+		justify-content: center
 	&__item 
 		width: 33.33%
+		padding: 0 10px
 	&__item-img 
 		object-fit: contain
 
@@ -28,3 +30,28 @@
 		text-align: center
 	&__text-success
 		font-weight: bold
+
+
+@media ( max-width: 610px )
+	.how__item
+		width: 50%
+		margin-bottom: 50px
+	.how
+		padding: 80px 0 30px
+	.how__title
+		margin-bottom: 50px
+
+@media ( max-width: 415px )
+	.how__item-box
+		height: 70px
+		margin-bottom: 25px
+	.how__item 
+		margin-bottom: 45px
+	.how
+		padding: 60px 0 20px
+
+@media ( max-width: 350px )
+	.how__item
+		width: 100%
+	.how__item-box
+		margin-bottom: 20px
