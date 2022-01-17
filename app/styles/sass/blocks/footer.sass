@@ -5,6 +5,7 @@
 		display: flex
 		justify-content: space-between
 		align-items: center
+		flex-wrap: wrap
 	&__copyright
 		display: flex
 		color: #fff
@@ -15,3 +16,14 @@
 		margin: 0 28px
 	&__copyright-logo
 		width: 150px
+
+@media  ( max-width: 525px )
+	.footer__inner
+		justify-content: space-around
+	.footer
+		padding: 30px 0
+@media  ( max-width: 450px )
+	.footer__copyright-text
+		margin: 0 5px
+	.footer__copyright-logo
+		width: 125px

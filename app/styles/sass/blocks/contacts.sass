@@ -82,6 +82,7 @@
 		line-height: 1.57
 		color: #000
 		margin-bottom: 10px
+		text-align: left
 	&__btn
 		font-family: Muller
 		font-size: 18px
@@ -109,3 +110,33 @@
 
 
 
+@media  ( max-width: 900px )
+	.form
+		margin-right: 40px
+	.contacts-box
+		padding: 100px 60px
+
+@media  ( max-width: 730px )
+	.contacts-box
+		padding: 80px 35px
+@media  ( max-width: 700px )
+	.contacts__inner
+		flex-wrap: wrap
+		justify-content: center
+	.form
+		margin-right: 0
+		width: 85%
+		text-align: center
+		padding-top: 0
+	.contacts-box
+		padding: 60px 35px
+	.contacts__title
+		margin-bottom: 40px	
+
+
+
+@media  ( max-width: 400px )
+	.form__btn
+		width: 100%
+		max-width: 320px
+		font-size: 16px
