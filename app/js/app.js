@@ -158,5 +158,47 @@ $('.partners__slider').slick({
 				
     });
 
+$('.tariff__tab-inner').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+	nextArrow: '<button type="button" class="slick-next"></button>',
+	prevArrow: '<button type="button" class="slick-prev"></button>',
+
+	responsive: [
+		
+    {
+      breakpoint: 960,
+      settings: {
+        arrows: true,
+				autoplay: true,
+				autoplaySpeed: 3000,
+				slidesToShow: 2,
+				slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 670,
+      settings: {
+        arrows: true,
+				autoplay: true,
+				slidesToShow: 1,
+				slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 450,
+      settings: {
+        arrows: true,
+				autoplay: false,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				variableWidth: false
+      }
+    }
+
+  ]
+
+  });
+
 
 })
