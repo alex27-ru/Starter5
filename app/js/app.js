@@ -4,6 +4,9 @@
 /* устанавливать jQuery (с записью в package.json) если не сработало подключение библиотеки - npm install jquery --save */
 document.addEventListener('DOMContentLoaded', () => {
 
-	// Custom JS
+$('.burger,.header__burger').click(function(event) {
+		$('.burger,.header__burger').toggleClass('active');
+		$('body').toggleClass('lock');
+	});
 
 })
