@@ -3,7 +3,7 @@
 	background-position: top center
 	background-repeat: no-repeat
 	background-size: cover
-	&__title 
+	// &__title 
 	&__title-description 
 		font-size: 26px
 		text-align: center
@@ -23,7 +23,7 @@
 		border: 1px solid #fff
 		border-radius: 4px
 		padding: 22px 22px 24px 22px
-	&__square 
+	// &__square 
 	&__square-title 
 		margin-bottom: 19px
 		font-size: 20px
@@ -40,12 +40,37 @@
 			opacity: 0.5
 			border-radius: 4px
 			background-color: #fff
-			top: 8px
+			top: 10px
 			z-index: 1
 	&__input-item 
 		z-index: 2
+		position: relative
+		width: 23px
+		height: 23px
 	&__input-radio 
-	&__box-package 
+		top: 0
+		left: -9999px
+		position: absolute
+	&__input-radio:checked + .radio__visible
+		&:before
+			content: ""
+			position: absolute
+			top: 11.5px
+			left: 50%
+			transform: translate(-50%, -50%)
+			width: 6px
+			height: 6px
+			background-color: #fff
+			border-radius: 50%
+		background-color: #19b5fe
+		width: 23px
+		height: 23px
+		padding: 9px
+		top: 3px
+		left: -2px
+
+
+	// &__box-package 
 	&__package-title 
 		font-size: 20px
 		line-height: 24px
@@ -123,10 +148,49 @@
 		align-items: center
 		width: 100%
 		max-width: 453px
+		
 	&__result-list 
 		text-align: center
-	&__result-item 
-	&__result-text 
-	&__result-data 
-	&__result-btn 
-	&__result-phone 
+	// &__result-item 
+	// &__result-text 
+	// &__result-data 
+	// &__result-btn 
+	// &__result-phone 
+
+.radio
+	&__visible
+		width: 18px
+		height: 18px
+		background-color: #fff
+		display: block
+		border-radius: 50%
+		vertical-align: middle
+		position: absolute
+		top: 5px
+		&:before
+			content: ""
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			width: 0
+			height: 0
+			transition: all .2s
+	&__text
+		position: absolute
+		bottom: 20px
+		width: max-content
+		right: -30px
+
+
+.calc__input-item
+		&:first-child
+			.radio__text
+				left: 0
+		&:last-child
+			.radio__text,
+			.radio__visible
+				right: 0
+				left: auto
+			.calc__input-radio:checked+.radio__visible
+				right: -2px
