@@ -31,46 +31,72 @@
 	&__input-inner
 		display: flex
 		justify-content: space-between 
+		align-items: center
 		position: relative
 		&::before
 			content: ''
 			position: absolute
-			width: 100%
+			width: 98%
 			height: 9px
 			opacity: 0.5
 			border-radius: 4px
 			background-color: #fff
-			top: 10px
+			margin-left: 5px
 			z-index: 1
 	&__input-item 
 		z-index: 2
 		position: relative
-		width: 23px
-		height: 23px
+		width: 43px
+		height: 43px
+		display: flex
+		justify-content: center
+		align-items: center
+		cursor: pointer
+		padding: 10px
+		margin: 0 -10px
+		&:first-child
+			.radio__text
+				left: 10px
+		&:last-child
+			.radio__visible
+				right: 0
+			.radio__text
+				right: 10px
 	&__input-radio 
 		top: 0
 		left: -9999px
 		position: absolute
 	&__input-radio:checked + .radio__visible
-		&:before
-			content: ""
-			position: absolute
-			top: 11.5px
-			left: 50%
-			transform: translate(-50%, -50%)
-			width: 6px
-			height: 6px
-			background-color: #fff
-			border-radius: 50%
 		background-color: #19b5fe
 		width: 23px
 		height: 23px
-		padding: 9px
-		top: 3px
-		left: -2px
+		&:before
+			content: ""
+			background-color: #fff
+			border-radius: 50%
+.radio
+	&__visible
+		width: 18px
+		height: 18px
+		background-color: #fff
+		display: block
+		border-radius: 50%
+		position: relative
+		display: flex
+		justify-content: center
+		align-items: center
+		&:before
+			content: ""
+			width: 7px
+			height: 7px
+			transition: all .2s
+	&__text
+		position: absolute
+		bottom: 35px
+		width: max-content
 
 
-	// &__box-package 
+.calc
 	&__package-title 
 		font-size: 20px
 		line-height: 24px
@@ -101,7 +127,6 @@
 				transform: translate(0)
 				&::after
 					left: 16%
-
 		&:last-child
 			.calc__package-help 
 				right: 0
@@ -110,6 +135,7 @@
 				&::after
 					left: auto
 					right: 16%
+
 	&__package-help 
 		position: absolute
 		top: 60px
@@ -140,8 +166,6 @@
 			border-bottom: 26px solid #fff
 			z-index: 5
 
-
-
 	&__result 
 		display: flex
 		flex-direction: column
@@ -157,40 +181,6 @@
 	// &__result-btn 
 	// &__result-phone 
 
-.radio
-	&__visible
-		width: 18px
-		height: 18px
-		background-color: #fff
-		display: block
-		border-radius: 50%
-		vertical-align: middle
-		position: absolute
-		top: 5px
-		&:before
-			content: ""
-			position: absolute
-			top: 50%
-			left: 50%
-			transform: translate(-50%, -50%)
-			width: 0
-			height: 0
-			transition: all .2s
-	&__text
-		position: absolute
-		bottom: 20px
-		width: max-content
-		right: -30px
 
 
-.calc__input-item
-		&:first-child
-			.radio__text
-				left: 0
-		&:last-child
-			.radio__text,
-			.radio__visible
-				right: 0
-				left: auto
-			.calc__input-radio:checked+.radio__visible
-				right: -2px
+
