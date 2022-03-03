@@ -22,10 +22,11 @@
 	&__box-package 
 		border: 1px solid #fff
 		border-radius: 4px
-		padding: 22px 22px 24px 22px
-	// &__square 
+		padding: 20px 22px 24px 22px
+	&__box-square
+		padding-bottom: 10px
 	&__square-title 
-		margin-bottom: 19px
+		margin-bottom: 30px
 		font-size: 20px
 		line-height: 24px
 	&__input-inner
@@ -171,15 +172,47 @@
 		flex-direction: column
 		align-items: center
 		width: 100%
-		max-width: 453px
+		max-width: 309px
+		margin-right: 72px
+
 		
 	&__result-list 
 		text-align: center
-	// &__result-item 
-	// &__result-text 
-	// &__result-data 
-	// &__result-btn 
-	// &__result-phone 
+	&__result-item
+		&:last-child
+			.calc__result-data
+				margin-bottom: 34px
+	&__result-text 
+		font-size: 16px
+		line-height: 1
+		margin-bottom: 10px
+	&__result-text_last
+		margin-bottom: 2px
+		font-size: 14px
+		font-weight: 300
+	&__result-data 
+		font-size: 32px
+		line-height: 1
+		margin-bottom: 20px
+		display: block
+	&__result-data>sup
+		font-size: 18px
+			
+	&__result-btn 
+		width: 100%
+		border-radius: 50px
+		height: 51px
+		background-color: #19b5fe
+		font-size: 14px
+		margin-bottom: 20px
+	&__result-phone 
+		color: #fff
+		text-decoration: none
+		font-size: 18px
+		font-weight: 500
+		&:hover
+			color: #fff
+			text-decoration: underline
 
 
 
