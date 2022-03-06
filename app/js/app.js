@@ -15,4 +15,42 @@ document.addEventListener("DOMContentLoaded", () => {
 			$("header,.header,.logo__img").removeClass("sticky");
 		}
 	});
+//изменение хедера при скролле
+
+
+
+calc();
+$(".calc__input-radio").on("change", calc);
+$(".calc__backage-btn").on("click", function(){
+	event.preventDefault()
+	$(".calc__backage-btn").removeClass("active");
+	$(this).addClass("active");
+	calc();
 });
+
+});
+
+function calc() {
+	var val = $(".calc__input-radio:checked").attr("value");//атрибут radio
+	var pacN = $(".calc__backage-btn.active").attr("value");//атрибут кнопки пакета
+
+	var valnum = parseInt(val); //преобразование текста в число
+	var result = val.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, "$1 "); //разделение разрядности пробелом
+
+	 $("#all-square").html(result+" м<sup>2</sup>");//вставка результата расчета на страницу
+
+	 var priceSq = valnum*48.5*pacN; //расчет средней стоимости
+	 var pricetxt = priceSq.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, "$1 ");//разделение разрядности пробелом
+	$("#priceSq").html(pricetxt+" тг.");//вставка результата расчета на страницу
+
+	var average = valnum*485*pacN;//расчет общей стоимости
+	 var averagetxt = average.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, "$1 ");//разделение разрядности пробелом
+	$("#average-price").html(averagetxt+" тг.");//вставка результата расчета на страницу
+
+	
+
+
+	
+	
+};
+

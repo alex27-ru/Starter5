@@ -154,7 +154,7 @@
 									type="radio"
 									name="square"
 									id="first"
-									class="calc__input-radio" checked
+									class="calc__input-radio" checked value="100"  
 								/>
 								<span class="radio__visible"></span>
 								<span class="radio__text">100м<sup>2</sup></span>
@@ -164,7 +164,7 @@
 									type="radio"
 									name="square"
 									id="second"
-									class="calc__input-radio"
+									class="calc__input-radio" value="10000"  
 								/>
 								<span class="radio__visible"></span>
 								<span class="radio__text">10 000м<sup>2</sup></span>
@@ -174,7 +174,7 @@
 									type="radio"
 									name="square"
 									id="third"
-									class="calc__input-radio"
+									class="calc__input-radio" value="250000"  
 								/>
 								<span class="radio__visible"></span>
 								<span class="radio__text">250 000м<sup>2</sup></span>
@@ -184,7 +184,7 @@
 									type="radio"
 									name="square"
 									id="fourth"
-									class="calc__input-radio"
+									class="calc__input-radio" value="500000"  
 								/>
 								<span class="radio__visible"></span>
 								<span class="radio__text">500 000м<sup>2</sup></span>
@@ -195,7 +195,7 @@
 				<div class="calc__box-package">
 					<h4 class="calc__package-title">Выберите пакет:</h4>
 					<div class="calc__package-inner">
-						<button class="calc__backage-btn">
+						<button class="calc__backage-btn active" value="1">
 							Light
 							<div class="calc__package-help">
 								<p>
@@ -205,7 +205,7 @@
 								</p>
 							</div>
 						</button>
-						<button class="calc__backage-btn">
+						<button class="calc__backage-btn" value="2">
 							Medium
 							<div class="calc__package-help">
 								<p>
@@ -215,7 +215,7 @@
 								</p>
 							</div>
 						</button>
-						<button class="calc__backage-btn">
+						<button class="calc__backage-btn" value="3">
 							Full
 							<div class="calc__package-help">
 								<p>
@@ -233,15 +233,15 @@
 				<ul class="calc__result-list">
 					<li class="calc__result-item">
 						<p class="calc__result-text">Площадь помещения:</p>
-						<span class="calc__result-data">1 000м<sup>2</sup></span>
+						<span class="calc__result-data" id="all-square">1 000м<sup>2</sup></span>
 					</li>
 					<li class="calc__result-item">
 						<p class="calc__result-text">Средняя стоимость м<sup>2</sup>:</p>
-						<span class="calc__result-data">4 850 тг.</span>
+						<span class="calc__result-data" id="priceSq">4 850 тг.</span>
 					</li>
 					<li class="calc__result-item">
 						<p class="calc__result-text">Средняя стоимость объекта:</p>
-						<span class="calc__result-data">48 500 тг.</span>
+						<span class="calc__result-data" id="average-price">48 500 тг.</span>
 					</li>
 				</ul>
 				<button class="calc__result-btn">
