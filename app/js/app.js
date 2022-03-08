@@ -28,6 +28,12 @@ $(".calc__backage-btn").on("click", function(){
 	calc();
 });
 
+$(".portfolio__fliter-btn").on("click", function(){
+	event.preventDefault()
+	$(".portfolio__fliter-btn").removeClass("portfolio__fliter-btn_active");
+	$(this).addClass("portfolio__fliter-btn_active");
+});
+
 });
 
 function calc() {

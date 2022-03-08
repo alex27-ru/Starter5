@@ -21,14 +21,16 @@
 		border-right: none
 		border-left: none
 		background-color: #fff
-		transition: all .2s ease
+		transition: all .1s ease
 		z-index: 3
 		&:hover
-			background-color: #19b5fe
-			color: #fff
 			border-radius: 8px
 			transform: scale(1.09)
+			border-left: 1px solid #19b5fe
+			border-right: 1px solid #19b5fe
 			z-index: 6
+			&::after
+				display: none
 		&:first-child
 			border-top-left-radius: 22px
 			border-bottom-left-radius: 22px
@@ -48,6 +50,12 @@
 		&:last-child
 			&::after
 				display: none
+	&__fliter-btn_active
+		background-color: #19b5fe
+		color: #fff
+		border-radius: 8px
+		transform: scale(1.09)
+		z-index: 5
 
 	&__list
 		display: flex
