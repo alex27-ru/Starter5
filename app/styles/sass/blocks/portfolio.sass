@@ -7,24 +7,14 @@
 		margin-bottom: 23px
 		justify-content: center
 		position: relative
-		&:before,
-		&:after
-			content: ''
-			position: absolute
-			width: 50%
-			height: 1px	
-			top: 2px
-			background-color: #19b5fe
-		&:after
-			bottom: 2px
-			top: auto
+
 	&__fliter-btn
 		font-weight: 300
 		font-size: 14px
 		text-transform: uppercase
 		color: #19b5fe
 		text-align: center
-		padding: 12px 40px
+		padding: 11px 40px
 		text-decoration: none
 		position: relative
 		border: 1px solid #19b5fe
@@ -32,13 +22,13 @@
 		border-left: none
 		background-color: #fff
 		transition: all .2s ease
-		margin: 2px 0
+		z-index: 3
 		&:hover
 			background-color: #19b5fe
 			color: #fff
 			border-radius: 8px
-			padding: 14px 42px
-			margin: 0
+			transform: scale(1.09)
+			z-index: 6
 		&:first-child
 			border-top-left-radius: 22px
 			border-bottom-left-radius: 22px
