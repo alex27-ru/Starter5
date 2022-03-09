@@ -1,5 +1,6 @@
 // // Import vendor jQuery plugin example
 // import '~/app/libs/mmenu/dist/mmenu.js'
+import '~/app/libs/mixitup/dist/jquery.mixitup.min.js'
 
 /* устанавливать jQuery (с записью в package.json) если не сработало подключение библиотеки - npm install jquery --save */
 document.addEventListener("DOMContentLoaded", () => {
@@ -29,10 +30,13 @@ $(".calc__backage-btn").on("click", function(){
 });
 
 $(".portfolio__fliter-btn").on("click", function(){
-	event.preventDefault()
+	// event.preventDefault()
 	$(".portfolio__fliter-btn").removeClass("portfolio__fliter-btn_active");
 	$(this).addClass("portfolio__fliter-btn_active");
 });
+
+
+$(".portfolio__list").mixItUp();
 
 });
 
