@@ -1,6 +1,11 @@
 // // Import vendor jQuery plugin example
 // import '~/app/libs/mmenu/dist/mmenu.js'
 import '~/app/libs/mixitup/dist/jquery.mixitup.min.js'
+import { Swiper, Scrollbar, Mousewheel, 
+Autoplay } from 'swiper'
+
+Swiper.use([ Scrollbar, Mousewheel, 
+Autoplay ])
 
 /* устанавливать jQuery (с записью в package.json) если не сработало подключение библиотеки - npm install jquery --save */
 document.addEventListener("DOMContentLoaded", () => {
@@ -37,6 +42,27 @@ $(".portfolio__fliter-btn").on("click", function(){
 
 
 $(".portfolio__list").mixItUp();
+
+
+const swiperIMG = new Swiper(".clients__slider", {
+	loop: false,
+	speed: 240,
+	// spaceBetween: 30,
+	slidesPerView: 7,
+	autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+	scrollbar: {
+          el: ".swiper-scrollbar",
+          hide: false,
+					draggable: true,
+        },
+	mousewheel: {
+    			invert: false,
+  },
+});
+
 
 });
 
