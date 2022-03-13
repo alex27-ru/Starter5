@@ -1,0 +1,24 @@
+.how
+	padding: 70px 0 65px
+	// &__title
+	// &__list
+	&__item
+		display: flex
+		align-items: center
+		&:nth-child(odd)
+			.how__item-img
+				order:1
+			.how__item-title
+				order: 2
+		&:nth-child(even)
+			.how__item-img
+				order:2
+			.how__item-title
+				order: 1
+	&__item-img
+		max-width: 50%
+	&__item-title
+		text-align: center
+		width: 100%
+		max-width: 50%
+
