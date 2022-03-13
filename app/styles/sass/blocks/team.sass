@@ -1,0 +1,63 @@
+.team
+	// &__title
+	&__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&__item
+		width: 33.33%
+		text-align: center
+		padding: 15px
+		margin-bottom: 20px
+	&__img
+		margin: auto
+		border-radius: 50%
+		overflow: hidden
+	&__name
+		color: #19b5fe
+		font-size: 24px
+		line-height: 1.69
+	&__position
+		font-size: 16px
+		color: #464646
+		font-weight: 300
+	&__blockquote
+		font-weight: 300
+		line-height: 1.44
+		font-size: 18px
+		text-align: center
+		padding: 17px 55px 0
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			width: 47px
+			height: 37px
+			background-image: url(../images/dist/quote1.png)
+			left: 0
+			top: 0
+		&:after
+			content: ''
+			position: absolute
+			width: 47px
+			height: 37px
+			background-image: url(../images/dist/quote2.png)
+			background-size: cover
+			background-repeat: no-repeat
+			right: 0
+			bottom: 0
+	&__blockquote-title
+			font-size: 30px
+			display: block
+			margin-bottom: 5px
+	&__blockquote-text
+		display: block
+		max-width: 940px
+		margin: auto
+		margin-bottom: 5px
+	&__blockquote-name
+		font-weight: 500
+		display: block
+	&__blockquote-position
+		font-size: 16px
+		display: block
