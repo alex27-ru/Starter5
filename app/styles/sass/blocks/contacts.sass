@@ -1,0 +1,107 @@
+.contacts
+	background-image: url(../images/dist/bg-contacts.jpg)
+	background-position: top center
+	background-repeat: no-repeat
+	background-size: cover
+	&__title
+		margin-bottom: 40px
+	&__title-description
+		font-size: 26px
+		line-height: 1.45
+		font-weight: 300
+		text-align: center
+		margin-bottom: 40px
+	&__inner
+		display: flex
+		flex-wrap: wrap
+	&__form
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		max-width: 750px
+		font-size: 13px
+		line-height: 1.85
+		font-weight: 300
+		color: #606060
+		margin-right: 30px
+	&__input
+		width: 32.03%
+		max-width: 240px
+		border: solid 1px rgba(0, 0, 0, 0.11)
+		background-color: #fff
+		border-radius: 8px
+		height: 49px
+		padding: 0 19px
+		color: inherit
+		margin-bottom: 13px
+	// 	&_name
+	&__textarea
+		width: 100%
+		margin-bottom: 17px
+		color: inherit
+		border: solid 1px rgba(0, 0, 0, 0.11)
+		background-color: #fff
+		border-radius: 8px
+		padding: 14px 19px
+		resize: none
+		height: 123px
+	&__btn-submit
+		margin: auto
+		background-color: #19b5fe
+		font-size: 15px
+		line-height: 1.3
+		font-weight: 500
+		width: 213px
+		height: 56px
+		border-radius: 30px
+	&__date
+		max-width: 34%
+		color: #fff
+		line-height: 24px
+		font-weight: 500
+	&__list
+		margin-bottom: 30px
+		font-size: 18px
+		color: inherit
+	&__item
+		margin-bottom: 15px
+		
+		
+		&:before
+			content: ''
+			border-radius: 2px
+			border: solid 1px #fff
+			padding-left: 25px
+			margin-right: 14px
+			background-position: center center
+			background-repeat: no-repeat
+			background-size: initial
+			font-size: 21px
+		&_tel
+			&:before
+				background-image: url(../images/dist/phone.png)
+		&_whatsapp
+			&:before
+				background-image: url(../images/dist/whatsapp.png)
+		&_mail
+			&:before
+				background-image: url(../images/dist/mail.png)
+		&_skype
+			&:before
+				background-image: url(../images/dist/skype.png)
+		&_telegram
+			&:before
+				background-image: url(../images/dist/telegram.png)
+	&__item-link
+		color: inherit
+		text-decoration: none
+		transition: all ease .2s
+		border-bottom: 2px solid transparent
+		&:hover
+			color: #fff
+			border-bottom: 2px solid #fff
+	&__schedule
+		font-size: 16px
+		line-height: 1.5
+		font-weight: 300
+		text-align: left
