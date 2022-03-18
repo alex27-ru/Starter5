@@ -1,6 +1,7 @@
 // // Import vendor jQuery plugin example
 // import '~/app/libs/mmenu/dist/mmenu.js'
 import '~/app/libs/mixitup/dist/jquery.mixitup.min.js'
+
 import { Swiper, Scrollbar, Mousewheel, 
 Autoplay } from 'swiper'
 
@@ -63,6 +64,43 @@ const swiperIMG = new Swiper(".clients__slider", {
   },
 });
 
+//карта яндекс
+ymaps.ready(init);
+    function init(){
+        // Создание карты.
+        var myMap = new ymaps.Map("map", {
+            // Координаты центра карты.
+            // Порядок по умолчанию: «широта, долгота».
+            // Чтобы не определять координаты центра карты вручную,
+            // воспользуйтесь инструментом Определение координат.
+            center: [43.23814913338616,76.9457429058776],
+            // Уровень масштабирования. Допустимые значения:
+            // от 0 (весь мир) до 19.
+            zoom: 14
+        });
+				myMap.behaviors.disable([
+					"scrollZoom",
+					"drag"
+				]);
+				myMap.controls.remove("searchControl");
+				myMap.controls.remove("fullscreenControl");
+				myMap.controls.remove("typeSelector");
+				myMap.controls.remove("trafficControl");
+
+				var myGeoObject = new ymaps.GeoObject({
+    geometry: {
+        type: "Point", // тип геометрии - точка
+        coordinates: [43.23814913338616,76.9457429058776], // координаты точки
+				preset: "islands#blueCircleDotIconWithCaption"
+    }
+		},
+		{
+			preset: "islands#blueCircleDotIconWithCaption"
+		}
+		);
+	myMap.geoObjects.add(myGeoObject);
+	
+  }
 
 });
 
@@ -83,10 +121,10 @@ function calc() {
 	 var averagetxt = average.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, "$1 ");//разделение разрядности пробелом
 	$("#average-price").html(averagetxt+" тг.");//вставка результата расчета на страницу
 
-	
 
 
 	
 	
 };
+
 
