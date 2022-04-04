@@ -31,10 +31,6 @@ header
 	max-width: 100%
 	height: auto
 .logo
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flex
-	display: -o-flex
 	display: flex
 	align-items: center
 
@@ -49,10 +45,6 @@ header
 	font-weight: 800
 
 .header
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flex
-	display: -o-flex
 	display: flex
 	justify-content: space-between
 	color: #fff
@@ -60,31 +52,26 @@ header
 	position: relative
 	padding: 34px 0
 	transition: all 0.4s ease
+	flex-wrap: wrap
 	p
 		margin: 0
 	&.sticky
 		padding: 5px 0
 
 .header-menu
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flex
-	display: -o-flex
 	display: flex
 
 .burger
 	margin-left: 60px
+	z-index: 30
 
 .header-menu
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flex
-	display: -o-flex
 	display: flex
 	align-items: center
 	position: relative
 
 .header-menu__phone
+	padding-left: 43px
 	&:before
 		content: ""
 		position: absolute
@@ -157,24 +144,50 @@ header
 	// 	top: 16px
 
 .header__list
-	padding: 0 15px
+	padding: 25px 35px 0
 	li
 		list-style: none
+		margin-bottom: 15px
 .header__burger
 	position: fixed
-	background-color: rgba(5, 5, 5, 0.65)
-	transition: opacity .3s ease
-	height: 0
+	background-color: rgba(5, 5, 5, 0.9)
+	transition: all .4s ease
+	height: 100%
 	z-index: 2
 	overflow: auto
-	padding-top: 10px
+	padding-top: 40px
 	opacity: 0
-	top: 60px
+	top: 0px
+	margin-left: 100%
+	width: 100%
 	&.active
 		opacity: 1
-		height: 100%
+		margin-left: 0
 	a
 		color: #fff
+		transition: all ease .2s
+		text-decoration: none
+		font-size: 18px
+		&:hover
+			color: #19b5fe
 
 body.lock
 	overflow: hidden
+
+
+@media ( max-width: 560px)
+	.header-menu
+		width: 100%
+		justify-content: space-between
+		padding-bottom: 5px
+	.logo
+		margin-bottom: 10px
+	.burger
+		margin-left: 0
+
+	.first-section
+		padding-top: 200px
+	
+@media ( max-width: 360px)
+	.header-menu__number
+		font-size: 18px
