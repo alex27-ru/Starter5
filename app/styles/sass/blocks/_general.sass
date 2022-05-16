@@ -43,7 +43,7 @@ button
 	&:after
 		content: ''
 		position: absolute
-		width: 377px
+		max-width: 377px
 		height: 1px
 		bottom: -22px
 		left: 0
@@ -63,3 +63,13 @@ button
 		color: #fff
 		&:after
 			background-color: #fff
+
+
+		
+@media ( max-width: 600px)
+	.title
+		font-size: 32px
+	.title:after
+		max-width: 300px
+	section
+		padding: 45px 0

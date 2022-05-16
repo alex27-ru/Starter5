@@ -5,9 +5,10 @@
 	&__item
 		display: flex
 		margin-bottom: 20px
+		align-items: flex-start
 		&:first-child
-			.services__item-content
-				padding-top: 58px
+			// .services__item-content
+			// 	padding-top: 58px
 			.services__item-text
 				margin-bottom: 20px
 		&:nth-child(odd)
@@ -18,7 +19,9 @@
 				padding-left: 30px
 				order: 1
 	&__item-content
-		padding-top: 100px
+		display: flex
+		flex-direction: column
+		align-self: center
 
 			
 	&__item-title
@@ -46,5 +49,28 @@
 		line-height: 15.5px
 		border-radius: 50px
 		font-family: roboto-oh5,sans-serif
-	// &__item-img 
+		align-self: flex-start
+	&__item-img 
+		width: 50%
 
+@media ( max-width: 700px)
+	.services__item
+		flex-wrap: wrap
+		justify-content: center
+	.services__item-content
+		margin-bottom: 35px
+	.services__item:nth-child(odd) .services__item-content
+		padding-right: 0
+	.services__item:nth-child(2n) .services__item-content
+		order: unset
+		padding-left: 0
+
+	// .services__item-btn
+	// 	align-self: center
+	.services__item-title
+		// text-align: center
+	.services__item-img
+		width: auto
+
+// @media ( max-width: 360px)
+	.services__title
