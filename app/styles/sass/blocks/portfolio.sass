@@ -71,3 +71,33 @@
 .portfolio__list
 	.mix
 		display: none
+
+@media ( max-width: 900px)
+	.portfolio__filter-inner
+		flex-wrap: wrap
+	.portfolio__fliter-btn
+		width: 40%
+		padding: 11px 20px
+		min-width: 250px
+		margin-bottom: 5px
+	.portfolio__fliter-btn:nth-child(2)
+		border-bottom-right-radius: 22px
+		border-right: 1px solid #19b5fe
+		border-top-right-radius: 22px
+		&:after
+			display: none
+	.portfolio__fliter-btn:nth-child(3)
+		border-bottom-left-radius: 22px
+		border-left: 1px solid #19b5fe
+		border-top-left-radius: 22px
+
+@media ( max-width: 559px)
+	.portfolio__fliter-btn
+		border-radius: 22px
+		border: 1px solid #19b5fe
+		width: 100%
+		max-width:320px
+		&:after
+			display: none
+	.portfolio__fliter-btn:hover
+		border-radius: 22px
