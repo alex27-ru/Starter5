@@ -26,6 +26,7 @@ import changed       from 'gulp-changed'
 import concat        from 'gulp-concat'
 import rsync         from 'gulp-rsync'
 import del           from 'del'
+import webp          from 'gulp-webp'
 
 function browsersync() {
 	browserSync.init({
@@ -97,6 +98,8 @@ function images() {
 	return src(['app/images/src/**/*'])
 		.pipe(changed('app/images/dist'))
 		.pipe(imagemin())
+		.pipe(dest('app/images/dist'))
+		.pipe(webp())
 		.pipe(dest('app/images/dist'))
 		.pipe(browserSync.stream())
 }
