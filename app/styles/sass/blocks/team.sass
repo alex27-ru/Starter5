@@ -27,26 +27,25 @@
 		line-height: 1.44
 		font-size: 18px
 		text-align: center
-		padding: 17px 55px 0
+		padding: 17px 55px 15px
 		position: relative
-		&:before
-			content: ''
-			position: absolute
-			width: 47px
-			height: 37px
-			background-image: url(../images/dist/quote1.png)
-			left: 0
-			top: 0
+		&:before,
 		&:after
 			content: ''
 			position: absolute
 			width: 47px
 			height: 37px
-			background-image: url(../images/dist/quote2.png)
-			background-size: cover
+			background-size: contain
 			background-repeat: no-repeat
+		&:before
+			background-image: url(../images/dist/quote1.png)
+			left: 0
+			top: 0
+		&:after
+			background-image: url(../images/dist/quote2.png)
 			right: 0
 			bottom: 0
+
 	&__blockquote-title
 			font-size: 30px
 			display: block
@@ -75,6 +74,28 @@
 	.team__position
 		line-height: 1.3
 		display: block
+
+	.team__blockquote
+		padding: 10px 37px 0
+	.team__blockquote:after,
+	.team__blockquote:before 
+		width: 35px
+		height: 28px
+
+	.team__blockquote-title
+		font-size: 26px
 @media ( max-width: 500px)
 	.team__name
 		font-size: 18px
+
+	.team__blockquote
+		padding: 10px 10px 0
+
+	.team__blockquote:after,
+	.team__blockquote:before 
+		width: 30px
+		height: 24px
+	.team__blockquote:before
+		left: -20px
+	.team__blockquote:after
+		right: -20px
